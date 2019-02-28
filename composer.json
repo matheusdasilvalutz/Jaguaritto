@@ -21,5 +21,8 @@
         "psr-4": {
             "Jaguaritto\\Html\\": "src/"
         }
-    }
+    },
+
+    "minimum-stability": "dev",
+    "prefer-stable": true,
 }
