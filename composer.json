@@ -14,19 +14,12 @@
         }
     ],
     "require": {
-        "php": ">=7.0.0",
-	"laravelcollective/html": "^5.2.0"
+        "php": ">=7.0.0"
     },
 
     "autoload": {
         "psr-4": {
             "Jaguaritto\\Html\\": "src/"
         }
-    },
-
-    "extra": {
-      "branch-alias": {
-        "dev-master": "1.0-dev"
-      }
     }
 }
