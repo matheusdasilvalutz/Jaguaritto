@@ -1,10 +1,10 @@
 <?php
-  namespace App\Jaguaritto;
+  namespace Jaguaritto\Html;
   
-  use App\Jaguaritto\JObject;
+  use Jaguaritto\Html\JObject;
   use Collective\Html\FormFacade as Form;
   
-  class JFormText extends JObject
+  class JFormDate extends JObject
   {
     public function __construct($id, $default = null)
     {
@@ -16,6 +16,6 @@
       parent::getHtml();
       
       $arrExtra = ['id' => $this->getId(), 'class' => $this->getClass()];
-      echo Form::text($this->getName(), $this->getDefault(), $arrExtra) . "</div>";
+      echo Form::date($this->getName(), $this->getDefault(), $arrExtra) . "</div>";
     }
   }

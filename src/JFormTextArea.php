@@ -1,7 +1,7 @@
 <?php
-  namespace App\Jaguaritto;
+  namespace Jaguaritto\Html;
   
-  use App\Jaguaritto\JObject;
+  use Jaguaritto\Html\JObject;
   use Collective\Html\FormFacade as Form;
   
   class JFormTextArea extends JObject

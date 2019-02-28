@@ -1,12 +1,12 @@
 <?php
-  namespace App\Jaguaritto;
+  namespace Jaguaritto\Html;
   
-  use App\Jaguaritto\JObject;
+  use Jaguaritto\Html\JObject;
   use Collective\Html\FormFacade as Form;
   
-  class JFormSubmit extends JObject
+  class JFormText extends JObject
   {
-    public function __construct($id, $default = "Enviar")
+    public function __construct($id, $default = null)
     {
       parent::__construct($id, $default);
     }
@@ -16,6 +16,6 @@
       parent::getHtml();
       
       $arrExtra = ['id' => $this->getId(), 'class' => $this->getClass()];
-      echo Form::submit($this->getDefault(), $arrExtra) . "</div>";
+      echo Form::text($this->getName(), $this->getDefault(), $arrExtra) . "</div>";
     }
   }

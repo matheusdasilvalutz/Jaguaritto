@@ -1,5 +1,5 @@
 <?php
-  namespace App\Jaguaritto;
+  namespace Jaguaritto\Html;
   
   use Collective\Html\FormFacade as Form;
   
